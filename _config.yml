@@ -1,4 +1,27 @@
+source: .
+destination: ./_site
+plugins_dir: ./_plugins
+layouts_dir: ./_layouts
+data_dir: ./_data
+
+encoding:     "utf-8"
+
+# Serving
+detach:  false
+port:    4000
+host:    127.0.0.1
+baseurl: "" # does not include hostname
+
 title: Raul Rodriguez
 description: Cayman is a clean, responsive theme for GitHub Pages.
 google_analytics:
 theme: jekyll-theme-cayman
+
+github:
+  is_project_page: true
+  owner_name: Raul Rodriguez
+  owner_url: https://github.com/raulra08/
+  repository_name: raulra08.github.io
+  repository_url: https://github.com/raulra08/raulra08.github.io
+
+include: ['_pages']
