@@ -8,6 +8,10 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 There should be whitespace between paragraphs.
 
+![name of the image](/assets/pic1.jpg)
+![name of the image](/assets/pic2.jpg)
+![name of the image](/assets/pic3.png)
+
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
 # [](#header-1)Header 1
