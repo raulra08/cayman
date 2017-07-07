@@ -11,6 +11,7 @@ detach:  false
 port:    4000
 host:    127.0.0.1
 baseurl: "" # does not include hostname
+url: ""
 
 title: Raul Rodriguez
 description: Software Engineer
