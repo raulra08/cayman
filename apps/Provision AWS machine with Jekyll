@@ -1,0 +1,30 @@
+# Install rvm & ruby 2.4
+# https://tecadmin.net/install-ruby-2-4-centos-rvm/
+
+sudo yum update -y
+sudo yum install git -y
+sudo yum install ruby -y
+
+bundler -v
+#ERROR: [/usr/local/share/ruby/site_ruby/2.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- io/console (LoadError)]
+sudo gem install io-console
+
+gem uninstall bundler bundle rubygems-update --all -x && \
+  gem update --system 2.6.1 && \
+  gem install bundler && \
+  gem uninstall rubygems-update --all -x && \
+  gem update --system 2.6.4
+
+# required to successfully install jekyll
+sudo yum install -y gcc ruby-devel rubygems
+sudo gem install jekyll
+
+bundle install
+
+bundle exec jekyll serve
+# ERROR [bundler: failed to load command: jekyll (/usr/local/bin/jekyll) LoadError: cannot load such file -- json]
+
+sudo gem install json
+# Add gem 'json' to Gemfile.
+
+bundle exec jekyll serve
